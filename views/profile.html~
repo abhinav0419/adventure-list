@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>ADVENTURE LIST APP</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="public/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="public/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="public/css/font-awesome.min.css">
+
+    <script src="public/js/jquery-2.1.1.js"></script>
+	
+	<script src="http://use.edgefonts.net/bree-serif.js"></script>
+    <script src="http://use.edgefonts.net/damion.js"></script>
+ 
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">	
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+
+    </head>
+
+ 
+<body>	
+	
+<!-- Menu -->
+	<nav class="menu" id="theMenu">
+              <div class="menu-wrap">			
+			<i class="icon-remove menu-close"></i>
+			<h3 class="explore"><a href="explore.html" class="smoothScroll">Explore</a>
+			<h4 class="mylist"><a href="index.html" class="smoothScroll">My List </a>
+			<h5 class="create"><a href="index.html" class="smoothScroll">Create New List</a>
+			<h6 class="facebook"><a href="http://facebook.com"><i class="icon-facebook"></i></a>
+			<h7 class="twitter"><a href="http://twitter.com"><i class="icon-twitter"></i></a>
+			<h8 class="google"><a href="http://plus.google.com"><i class="icon-google-plus" ></i></a>
+			<h9 class="github"><a href="http://github.com/abhinav0419"><i class="icon-github" ></i></a>
+		</div>
+		
+		<!-- Menu button -->
+		<div id="menuToggle"><i class="icon-reorder"></i></div>
+	</nav>
+<!-- from for email -->
+<img src="public/img/envelope.png" id="envelope">
+<img src="public/img/lock.png" id="lock">
+<div id=emailsign>
+<input type="text" align="centre" id="username" placeholder="Username" data-content="enter your username" style="width: 200px;" ><br>
+<input type="password" id="pass" placeholder="password" data-content="enter your password" style="width: 200px;" ><br>
+&nbsp;<button id="signin" type="button" class="btn btn-info" target="/login">Login</button>
+&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-primary " data-toggle="modal"  target="/singup">Sign Up</button><br>
+&nbsp;<a href="#password" data-toggle="modal">Forgot Password</a>
+</div>
+<form method="POST">
+<div class="modal" id="esignup">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Change Password</h4>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="form-control" id="fname" placeholder="First Name" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="Enter your first name here." data-original-title="user" required>
+<input type="text" class="form-control" id="lname" placeholder="Last Name" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="Enter your last name here." data-original-title="user" required>
+<input type="text" class="form-control" id="nameuser" placeholder="your user name" data-toggle="popover" data-placement="left" data-trigger="focus" data-content=" new user name." data-original-title="user" required>
+<input type="text" class="form-control" id="signpass" placeholder="your password" data-toggle="popover" data-placement="left" data-trigger="focus" data-content=" your password." data-original-title="user" required>
+<input type="text" class="form-control" id="confirmsignpass" placeholder="confirm passoword" data-toggle="popover" data-placement="left" data-trigger="focus" data-content=" confirm your password" data-original-title="user" required>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal --> 
+</form>
+
+<div class="modal" id="password">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Change Password</h4>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="form-control" id="uname" placeholder="Username" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="Enter your Username here." data-original-title="user" required>
+<input type="text" class="form-control" id="newpassword" placeholder="new password" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="Enter your newpassword here." data-original-title="user" required>
+<input type="text" class="form-control" id="confirmnewpass" placeholder="confirm new password" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="Confirm new password." data-original-title="user" required>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Password</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal --> 
+
+
+
+
+	
+	<!-- ========== HEADER SECTION ========== -->
+	<section id="home" name="home"></section>
+	  
+       
+             <div id="headerwrap">
+		<div class="container">
+			<div class="logo">
+
+				<img src="public/img/logo.png">
+			</div>
+			<br>
+			<div class="row">
+				<h1>Bucket List is a great way to keep track of all the adventure places and other tourist places which you as a user would like to visit.</h1>
+				
+				<h2>Sign up if you dont have an Account else Sign in now to see all your adventure places and progress you have made so far in achieving your goals.</h2>
+				<br>
+				<br>
+				<div class="col-lg-6 col-lg-offset-3">
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+
+	
+	
+	
+
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="public/js/classie.js"></script>
+    
+    <script src="public/js/smoothscroll.js"></script>
+	<script src="public/js/main.js"></script>
+  <script src="public/js/bootstrap.js"></script>
+</body>
+</html>
