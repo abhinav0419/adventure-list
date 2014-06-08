@@ -204,16 +204,19 @@ a:after {
 	color: orange;
 }
 .menu h6 a:hover {
+	color: orange;
+}
+.menu h7 a:hover {
 	color: blue;
         
 }
-.menu h7 a:hover {
+.menu h8 a:hover {
 	color: white;
 }
-.menu h8 a:hover {
+.menu h9 a:hover {
 	color: red;
 }
-.menu h9 a:hover {
+.menu h10 a:hover {
 	color: cyan;
 }
 .menu img.logo {
