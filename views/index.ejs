@@ -29,72 +29,22 @@
 
  
 <body>	
-	
-<!-- Menu -->
-	<nav class="menu" id="theMenu">
-              <div class="menu-wrap">	
-                        <i class="icon-remove menu-close"></i>
-			<h3 class="explore"><a href="explore.ejs" class="smoothScroll" >Explore</a>
-			<h4 class="mylist"><a href="index.html" class="smoothScroll" alert="sign in">My List </a>
-			<h5 class="create"><a href="index.html" class="smoothScroll">Create New List</a>
-			<h6 class="facebook"><a href="http://facebook.com"><i class="icon-facebook"></i></a>
-			<h7 class="twitter"><a href="http://twitter.com"><i class="icon-twitter"></i></a>
-			<h8 class="google"><a href="http://plus.google.com"><i class="icon-google-plus" ></i></a>
-			<h9 class="github"><a href="http://github.com/abhinav0419"><i class="icon-github" ></i></a>
+
+	<!-- LOGIN FORM --><img src="/img/envelope.png" id="envelope">
+	<img src="/img/lock.png" id="lock">
+    <% if (message.length > 0) { %>
+		<div class="alert alert-danger"><%= message %></div>
+	<% } %>
+	<form action="/login" method="post" id="sing">
+		<div class="form-group" >			
+			<input type="text" class="form-control" name="email" placeholder="Username">
 		</div>
-		
-		<!-- Menu button -->
-		<div id="menuToggle"><i class="icon-reorder"></i></div>
-	</nav>
-
-<div id="wrapper">
-
-		<div id="examples_outer">
-			
-
-			<div id="slider_container_3">
-
-				<div id="SliderName_3" class="SliderName_3">
-					<img src="/img/1.png" width="680" height="335" alt="" title="" />
-					<img src="/img/2.png" width="680" height="335" alt="" title="" />
-					<img src="/img/3.png" width="680" height="335" alt="" title="" />
-					<img src="/img/4.png" width="680" height="335" alt="" title="" />
-					<img src="/img/5.png" width="680" height="335" alt="" title="" />
-					<img src="/img/6.png" width="680" height="335" alt="" title="" />	
-					<img src="/img/7.png" width="680" height="335" alt="" title="" />
-					<img src="/img/8.png" width="680" height="335" alt="" title="" />
-					<img src="/img/9.png" width="680" height="335" alt="" title="" />
-					<img src="/img/10.png" width="680" height="335" alt="" title="" />
-</div>
-				
-
-				<script type="text/javascript">
-
-					demo3Effect1 = {name: 'myEffect31', top: true, move: true, duration: 400};
-					demo3Effect2 = {name: 'myEffect32', right: true, move: true, duration: 400};
-					demo3Effect3 = {name: 'myEffect33', bottom: true, move: true, duration: 400};
-					demo3Effect4 = {name: 'myEffect34', left: true, move: true, duration: 400};
-					demo3Effect5 = {name: 'myEffect35', rows: 3, cols: 9, delay: 50, duration: 100, order: 'random', fade: true};
-					demo3Effect6 = {name: 'myEffect36', rows: 2, cols: 4, delay: 100, duration: 400, order: 'random', fade: true, chess: true};
-
-					effectsDemo3 = [demo3Effect1,demo3Effect2,demo3Effect3,demo3Effect4,demo3Effect5,demo3Effect6,'blinds'];
-
-					var demoSlider_3 = Sliderman.slider({container: 'SliderName_3', width: 680, height: 335, effects: effectsDemo3, display: {autoplay: 3000}});
-				</script>
-
-				
-			</div>
-			
+		<div class="form-group" id ="passtext">			
+			<input type="password" class="form-control" name="password" placeholder="Password">
 		</div>
-
-		
-	</div>
-<!-- from for email -->
-<div id=emailsign>
-<a href="/login" class="btn btn-info"> Sign in</a>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="/signup" class="btn btn-primary"> Signup</a><br>
-</div>
-
+		<button type="submit" class="btn btn-info" id="bsignin"> Sign in</button>
+		<button href="/signup" class="btn btn-primary" id="bsignup"> Signup</button>
+	</form>
 	
 	<!-- ========== HEADER SECTION ========== -->
 	<section id="home" name="home"></section>
@@ -135,3 +85,13 @@
   <script src="/js/bootstrap.js"></script>
 </body>
 </html>
+
+    	var ic1=data.daily.data[0].icon;
+        var $iconCanvas = $('<canvas width="32" height="32" id="weather-icon">');
+        var skycons = new Skycons();
+        skycons.add('weather-icon', ic1);
+    	skycons.play();
+       
+       $('weather').text('Current temperature:  ' + data.currently.temperature +'!!!' + data.daily.summary);  
+       console.log(ic1)     
+    	//$weather.append($iconCanvas);

@@ -95,7 +95,7 @@ a:after {
 }
 
 #headerwrap h1 {
-	margin-top: 400px;
+	margin-top: 300px;
 	color: white;
 	font-size: 20px;
 	font-weight: 100;
@@ -178,7 +178,7 @@ a:after {
 
 .menu h1.logo a {
 	font-family: 'Oswald', sans-serif;
-	font-size: 16px;
+	font-size: 8px;
 	font-weight: 700;
 	letter-spacing: 0.15em;
 	line-height: 40px;
@@ -187,10 +187,11 @@ a:after {
 	margin-top: 20px;
 }
 
-
-.menu h1.logo a:hover {
-	color: red;
+.menu p {
+	color: white;
+	position: absolute;
 }
+
 .menu h2 a:hover {
 	color: orange;
 }
@@ -335,13 +336,42 @@ a:after {
 		 -o-transition: all .1s ease-in-out;
 			transition: all .1s ease-in-out;
 }
-#emailsign {
- 	    position:absolute;			
+
+#sing{
+	position:absolute;			
             left:40%;
-	    top:480px; 
-                       
+	    top:240px;
+}
+#bsignin {
+ 	    position:absolute;			
+            
+	     top: 72px;
+
             
 }
+#bsignup {
+ 	    position:absolute;			
+            left:50%;
+	         top: 72px;        
+}
+#passtext {
+ 	    position:absolute;			
+            top: 40px;
+	                 
+}
+#envelope {
+ 	    position:absolute;
+ 	        left: 38%;			
+            top: 240px;
+	                 
+}
+#lock {
+ 	    position:absolute;
+ 	        left: 38.5%;			
+            top: 280px;
+	                 
+}
+
 #examples_outer {
 position:absolute;
 left:20%;

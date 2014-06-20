@@ -6,6 +6,15 @@ var express  = require('express');
 var app      = express();
 var port     = process.env.PORT || 8080;
 var mongoose = require('mongoose');
+//var mysql      = require('mysql');
+//var connection = mysql.createConnection({
+  //host     : 'localhost',
+  //user     : 'root',
+  //password : 'abhinav',
+  //database : 'authenticate'
+//});
+
+//connection.connect();
 var passport = require('passport');
 var flash 	 = require('connect-flash');
 app.use(express.static(__dirname + '/public'));
@@ -39,15 +48,6 @@ require('./app/routes.js')(app, passport); // load our routes and pass in our ap
 app.listen(port);
 console.log('bucket adventure started');
 
-// set up ======================================================================
-// get all the tools we need
-var express  = require('express');
 
-var port     = process.env.PORT || 8080;
-var mongoose = require('mongoose');
-var passport = require('passport');
-var flash 	 = require('connect-flash');
 
-var configDB = require('./config/database.js');
-;
 

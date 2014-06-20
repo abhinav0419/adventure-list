@@ -34,9 +34,8 @@
 	<nav class="menu" id="theMenu">
               <div class="menu-wrap">	
                         <i class="icon-remove menu-close"></i>
-			<h3 class="explore"><a href="explore.ejs" class="smoothScroll" >Explore</a>
-			<h4 class="mylist"><a href="index.html" class="smoothScroll" >My List </a>
-			<h5 class="create"><a href="index.html" class="smoothScroll">Create New List</a>
+                        <p><strong>Welcome</strong>: <%= user.local.email %> </p>
+			<h4 class="mylist"><a href="/explore" class="smoothScroll" >Explore </a>
 			<h6 class="log out"><a href="/logout" class="smoothScroll">Log Out</a>
 			<h7 class="facebook"><a href="http://facebook.com"><i class="icon-facebook"></i></a>
 			<h8 class="twitter"><a href="http://twitter.com"><i class="icon-twitter"></i></a>

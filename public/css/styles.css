@@ -1,0 +1,49 @@
+.modal-dialog {}
+.thumbnail {margin-bottom:6px;}
+
+.carousel-control.left,.carousel-control.right{
+  background-image:none;
+  margin-top:10%;
+  width:5%;
+}
+
+#img1{
+	width:320px;
+	height:156px;
+
+}
+#img2{
+	width:320px;
+	height:156px;
+
+}
+#img3{
+	width:320px;
+	height:156px;
+
+}
+#img4{
+	width:320px;
+	height:156px;
+
+}
+#img5{
+	width:320px;
+	height:156px;
+
+}
+#img6{
+	width:320px;
+	height:156px;
+
+}
+#img7{
+	width:320px;
+	height:156px;
+
+}
+#img8{
+	width:320px;
+	height:156px;
+
+}

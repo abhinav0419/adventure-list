@@ -178,7 +178,7 @@ a:after {
 
 .menu h1.logo a {
 	font-family: 'Oswald', sans-serif;
-	font-size: 16px;
+	font-size: 8px;
 	font-weight: 700;
 	letter-spacing: 0.15em;
 	line-height: 40px;
@@ -187,10 +187,11 @@ a:after {
 	margin-top: 20px;
 }
 
-
-.menu h1.logo a:hover {
-	color: red;
+.menu p {
+	color: white;
+	position: absolute;
 }
+
 .menu h2 a:hover {
 	color: orange;
 }
@@ -203,7 +204,7 @@ a:after {
 .menu h5 a:hover {
 	color: orange;
 }
-.menu h5 a:hover {
+.menu h6 a:hover {
 	color: orange;
 }
 .menu h7 a:hover {
